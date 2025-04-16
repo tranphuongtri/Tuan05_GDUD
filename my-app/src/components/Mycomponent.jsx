@@ -14,11 +14,21 @@ class Mycomponent extends React.Component {
 
         return (
             <div>
-                <Childcomponent myProp={parents}
-                    sum={this.sum}></Childcomponent>
+                <Childcomponent
+                    myProp={parents}
+                    sum={this.sum}
+                ></Childcomponent>
                 My name is: {this.state.Name}
                 <br />
-                My age is: {this.state.Age}</div>
+                My age is: {this.state.Age}
+
+                {/* <input type="text" name="" id="" value={this.state.valueInput} /> */}
+                {/* <input type="text" name="" id="" value={this.state.valueInput} onChange={(event) => { this.handleInput(event) }} /> */}
+
+                <div>
+                    {/* <span>{this.state.valueInput}</span> */}
+                </div>
+            </div>
 
         )
     }

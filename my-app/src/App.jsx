@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
@@ -15,8 +16,8 @@ function App() {
   }
   return (
     <>
-      <h3>Danh sach viec can lam</h3>
-      <input type="text" name="" id="" value={textInput} onChange={onTextInputChange} />
+      {/* <h3>Danh sach viec can lam</h3>
+      <input type="text" name="" id="" value={textInput} onChange={onTextInputChange} /> */}
       <Mycomponent></Mycomponent>
     </>
   )
