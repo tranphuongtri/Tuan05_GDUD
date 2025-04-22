@@ -1,30 +1,32 @@
-import { useState } from 'react'
-import
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
-import Mycomponent from './components/Mycomponent'
+import { useState } from "react";
+import reactLogo from "./assets/react.svg";
+import viteLogo from "/vite.svg";
+import "./App.css";
+import Mycomponent from "./components/Mycomponent";
+import TodoList from "./components/TodoList";
+import DataTable from "./components/DataTable";
 function App() {
   const [count, setCount] = useState(0);
   const [todoList, setTodoList] = useState([]);
   const [textInput, setTextInput] = useState("");
   const onTextInputChange = (e) => {
     setTextInput(e.target.value);
-  }
+  };
   const onAddBtnClick = (e) => {
     // setTodoList([{...todoList,{id:'',name:textInput,isCom}}])
-  }
+  };
   return (
     <>
       {/* <h3>Danh sach viec can lam</h3>
       <input type="text" name="" id="" value={textInput} onChange={onTextInputChange} /> */}
       <Mycomponent></Mycomponent>
+      {/* <TodoList /> */}
+      <DataTable></DataTable>
     </>
-  )
+  );
 }
 
-export default App
-
+export default App;
 
 // import React, { useReducer, useRef, memo, useMemo, useCallback } from "react";
 // import { BrowserRouter as Router, Route, Routes, Link } from "react-router-dom";
